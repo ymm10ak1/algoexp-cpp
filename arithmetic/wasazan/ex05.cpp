@@ -9,9 +9,7 @@ using ll = long long;
 int main(){
     int a, b;
     cin >> a >> b;
-    int x = (a+b)/2;
-    int y = a - x;
-    if((a+b)%2 == 0 && x >= 0 && y >= 0) cout << x << endl;
-    else cout << -1 << endl;
+    if((a+b)%2 != 0 || a < b) cout << -1 << endl;
+    else cout << (a+b)/2 << endl;
     return 0;
 }
